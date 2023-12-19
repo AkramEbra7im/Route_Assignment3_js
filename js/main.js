@@ -152,7 +152,7 @@ function siteNameValdiation() {
 }
 
 function siteURLValdiation() {
-    var regex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,})(\/[^\s]*)?$/
+    var regex = /^(https?:\/\/)?([\da-zA-Z.-]+)\.([a-z.]{2,})(\/[^\s]*)?$/
     var validation = regex.test(SiteURLInput.value)
     if (validation) {
         SiteURLInput.classList.remove("is-invalid")
