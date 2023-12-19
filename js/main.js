@@ -54,6 +54,10 @@ function display() {
 }
 
 function clearForm() {
+    SiteNameInput.classList.remove("is-valid")
+        SiteURLInput.classList.remove("is-valid")
+    SiteNameInput.classList.remove("is-invalid")
+        SiteURLInput.classList.remove("is-invalid")
     SiteNameInput.value = "";
     SiteURLInput.value = "";
 }
