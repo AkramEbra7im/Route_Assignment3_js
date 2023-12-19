@@ -1,0 +1,137 @@
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    background-color: #F7ECDE;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    display: inline-block;
+    /* background-image: linear-gradient(to right, #cb7c14, rgb(143, 15, 15));
+    background-clip: text;
+    color: transparent; */
+}
+
+header h1::before {
+    content: '';
+    background-color: #fec260;
+    height: 30%;
+    width: 100%;
+    left: 0;
+    bottom: 3px;
+    position: absolute;
+    z-index: -1;
+    transition: height .5s;
+}
+
+header h1:hover::before {
+    height: 65%;
+    
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h2 span{
+    font-family: 'Righteous',sans-serif;
+    font-size: 1.6rem;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+
+#message{
+    padding:2rem 0 0;
+    text-align: center;
+    display: none;
+    margin: 0;
+}
+
+#message{
+    color: #096e27;
+}
+
+.showform > div{
+    border-bottom: 2px dotted #000;
+    border-top: 2px dotted #000;
+
+}
+
+.circles i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.circles i:first-child{
+    background-color: #F15F5D;
+}
+
+.circles i:nth-child(2){
+    background-color: #FEBE2E;
+}
+
+.circles i:nth-child(3){
+    background-color: #4DB748;
+}
+.close{
+    cursor: pointer !important;
+}
+
+#boxModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+#innerBox{
+    width: 450px;
+}
+
+#innerBox p{
+    font-family: 'Bree Serif', serif;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#innerBox .fa-circle-right{
+   color: #bb4120;
+   font-size: 1.1rem;
+}
+
+#innerBox span{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../webfonts/Pacifico-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Righteous';
+    src: url('../webfonts/Righteous-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bree Serif';
+    src: url('../webfonts/BreeSerif-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../webfonts/PTSansCaption-Regular.ttf') format('truetype');
+}
